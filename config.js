@@ -10,10 +10,7 @@ module.exports = {
   SESSION_ID: process.env.SESSION_ID || "idvu3oj6_XASENA_w46_XASENA_nb8c",
   LANG: process.env.LANG || "EN",
   AUTH_TOKEN: "",
-  HANDLERS:
-    process.env.HANDLER === "false" || process.env.HANDLER === "null"
-      ? "^"
-      : "^[#]",
+  HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^": "^[#]",
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "main",
   WARN_COUNT: 3,
@@ -21,8 +18,7 @@ module.exports = {
   WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
   AUTHOR: process.env.AUTHOR || "X-Electra",
-  SUDO:
-    process.env.SUDO || "918113921898,919598157259,918590508376,919383400679",
+  SUDO: process.env.SUDO || "556599071373",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   OWNER_NAME: process.env.OWNER_NAME || "Neeraj-X0",
@@ -31,7 +27,7 @@ module.exports = {
   AUTO_READ: toBool(process.env.AUTO_READ) || false,
   AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
   PROCESSNAME: process.env.PROCESSNAME || "x-asena",
-  WORK_TYPE: process.env.WORK_TYPE || "private",
+  WORK_TYPE: process.env.WORK_TYPE || "public",
   SESSION_URL: process.env.SESSION_URL || "",
   DELETED_LOG: toBool(process.env.DELETED_LOG) || false,
   DELETED_LOG_CHAT: process.env.DELETED_LOG_CHAT || false,
